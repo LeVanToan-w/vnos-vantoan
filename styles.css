@@ -1,0 +1,430 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(bggoc.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+}
+.sidebar-top {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.sidebar-left {
+    margin-left: 15px;
+}
+.logos {
+    position: fixed;
+}
+.element-left {
+    margin-left: 30px;
+    margin-top: 7px;
+    position: fixed;
+}
+#logo {
+    width: 30px;
+    height: 30px;
+}
+#file {
+    margin-left: 10px;
+}
+#edit {
+    margin-left: 10px;
+}
+#window {
+    margin-left: 10px;
+}
+#help {
+    margin-left: 10px;
+}
+#file:hover {
+    background-color: rgb(243, 243, 243);
+}
+#edit:hover {
+    background-color: rgb(243, 243, 243);
+}
+#window:hover {
+    background-color: rgb(243, 243, 243);
+}
+#help:hover {
+    background-color: rgb(243, 243, 243);
+}
+.sidebar-center {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7px;
+}
+#time {
+    display: flex;
+}
+.sidebar-right {
+    position: fixed;
+    margin-top: 7px;
+}
+#date {
+    display: flex;
+    position: fixed;
+    right: 60px;
+}
+.wifi {
+    position: fixed;
+    right: 37px;
+}
+#wifi {
+    font-size: 12px;
+}
+.volume {
+    position: fixed;
+    right: 10px;
+}
+#volume {
+    font-size: 12px;
+}
+.taskbar-btn {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#taskbar-open {
+    width: 20px;
+}
+.content-taskbar {
+    display: none;
+    width: 400px;
+    height: 350px;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+#icon-search {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#search-app {
+    width: 200px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+.search-in-app {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+.icon-search {
+    position: fixed;
+    right: 100px;
+    top: 12px;
+}
+.setting-app {
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    position: fixed;
+}
+#logo-app-setting {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    left: 18px;
+    top: 50px;
+}
+#name-app-setting {
+    position: fixed;
+    top: 105px;
+    left: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.file-app {
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    position: fixed;
+}
+#logo-app-file {
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+}
+#name-app-file {
+    position: fixed;
+    margin-left: 77px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content-appsetting {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 700px;
+    height: 450px;
+    margin-top: -200px;
+    position: fixed;
+    left:  50%;
+    transform: translateX(-50%);
+    top: 50%;
+    display: none;
+}
+.header-app-setting {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1x solid white;
+    height: 30px;
+    background-color: rgba(56, 51, 51, 0.3);
+    color: white;
+}
+#header-appsetting {
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+}
+.close-zoom-turnoff-appsetting {
+    position: fixed;
+    right: 10px;
+}
+#close-appsetting {
+    margin-right: 5px;
+}
+#zoom-appsetting {
+    margin-right: 5px;
+}
+.element-appsetting {
+    color: white;
+    position: fixed;
+    background-color: rgb(40, 40, 40, 0.4);
+    width: 700px;
+    height:420px;
+}
+#infor {
+    position: fixed;
+    left: 10px;
+    font-size: 20px;
+    top: 35px;
+}
+#wifisetting {
+    position: fixed;
+    top: 80px;
+    font-size: 20px;
+    left: 14px;
+}
+#bluetoothsetting {
+    position: fixed;
+    top: 130px;
+    font-size: 20px;
+    left: 15px;
+}
+#colorsetting {
+    position: fixed;
+    top: 180px;
+    font-size: 20px;
+    left: 16px;
+}
+.bufer-zone {
+    position: fixed;
+    left: 200px;
+    width: 0px;
+    height: 415px;
+    border: 1px solid rgb(196, 191, 191);
+}
+.person-user {
+    top: 70px;
+    border: 2px solid black;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    position: fixed;
+    right: 200px;
+}
+.head-user {
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    right: 225px;
+    top: 80px;
+}
+.body-user {
+    border: 2px solid black;
+    width: 60px;
+    height: 21px;
+    right: 210px;
+    position: fixed;
+    top: 113px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: none;
+}
+.infor-content {
+    position: fixed;
+    right: 210px;
+    top: 150px;
+}
+#name-system {
+    position: fixed;
+    right: 270px;
+}
+#vnos {
+    position: fixed;
+    right: 180px;
+    top: 155px;
+}
+#version {
+    position: fixed;
+    right: 295px;
+    top: 190px;
+}
+#vnos-version {
+    position: fixed;
+    right: 158px;
+    top: 195px;
+}
+#name-device {
+    position: fixed;
+    right: 282px;
+    top: 228px;
+}
+#vnos-name-device {
+    position: fixed;
+    right: 70px;
+    top: 233px;    
+}
+#chip {
+    position: fixed;
+    right: 330px;
+    top: 270px;
+}
+#vnos-chip {
+    position: fixed;
+    right: 195px;
+    top: 275px;
+}
+#cpu {
+    position: fixed;
+    right: 334px;
+    top: 310px;
+}
+#vnos-cpu {
+    position: fixed;
+    right: 110px;
+    top: 315px;
+}
+#ram {
+    position: fixed;
+    right: 330px;
+    top: 350px;
+}
+#vnos-ram {
+    position: fixed;
+    right: 104px;
+    top: 354px;
+}
+.file-sidebar-content {
+    position: fixed;
+    top: 25px;
+    left: 55px;
+    border: 1px solid rgb(201, 195, 195);
+    width: 85px;
+    height: 50px;
+    background-color: rgb(160, 150, 150);
+    color: white;
+    border-radius: 10px;
+    display: none;
+}
+#create-newfile {
+    position: fixed;
+    top: 30px;
+    left: 58px;
+}
+#openfile {
+    position: fixed;
+    top: 55px;
+    left: 59px;
+}
+#create-newfile:hover {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    color: black;
+}
+#openfile:hover {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    color: black;
+}
+.content-logo {
+    position: fixed;
+    top: 30px;
+    border: 1px solid rgb(216, 194, 194);
+    background-color: rgb(160, 150, 150);
+    color: white;
+    width: 75px;
+    height: 70px;
+    left: 18px;
+    border-radius: 15px;
+    display: none;
+}
+#sleep {
+    position: fixed;
+    left: 25px;
+}
+#restart {
+    position: fixed;
+    top: 55px;
+    left: 25px;
+}
+#shutdown {
+    position: fixed;
+    top:  80px;
+    left: 25px;
+}
+#sleep:hover {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    color: black;
+}
+#restart:hover {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    color: black;
+}
+#shutdown:hover {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    color: black;
+}
+.edit-sound {
+    position: fixed;
+    right: 7px;
+    top: 30px;
+    width: 200px;
+    display: none;
+}
+#volume-low {
+    position: fixed;
+    right: 170px;
+}
+#edit-volume {
+    position: fixed;
+    right: 30px;
+    top: 28px;
+}
+#volume-high {
+    position: fixed;
+    right: 8px;
+}
